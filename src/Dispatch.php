@@ -12,6 +12,11 @@ use Hanson\Foundation\Foundation;
  *
  * @method array createByShop($params)
  * @method array queryStatus($params)
+ * @method array createByCoordinates($params)
+ * @method array delete($params)
+ * @method array evaluate($params)
+ * @method array check($params)
+ * @method array location($params)
  */
 class Dispatch extends Foundation
 {
