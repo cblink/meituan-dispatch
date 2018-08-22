@@ -10,6 +10,8 @@ use Hanson\Foundation\Foundation;
  * Class Dispatch
  * @package Cblink\MeituanDispatch
  *
+ * @property \Cblink\MeituanDispatch\Test         $test
+ *
  * @method array createByShop($params)
  * @method array queryStatus($params)
  * @method array createByCoordinates($params)
@@ -22,6 +24,10 @@ class Dispatch extends Foundation
 {
 
     private $order;
+
+    protected $providers = [
+        TestServiceProvider::class
+    ];
 
     public function __construct($config)
     {

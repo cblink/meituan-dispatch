@@ -57,4 +57,24 @@ $dispatch->check($params);
 
 // 获取骑手当前位置
 $dispatch->location($params);
+
+# 订单测试接口
+
+$deliveryId = '';
+$peisongId = '';
+
+// 模拟接单
+$dispatch->test->arrange($deliveryId, $peisongId);
+
+// 模拟取货
+$dispatch->test->pickup($deliveryId, $peisongId);
+
+// 模拟送达
+$dispatch->test->deliver($deliveryId, $peisongId);
+
+// 模拟改派
+$dispatch->test->rearrange($deliveryId, $peisongId);
+
+// 模拟上传异常
+$dispatch->test->reportException($deliveryId, $peisongId);
 ```
