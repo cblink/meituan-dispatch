@@ -2,7 +2,6 @@
 namespace Cblink\MeituanDispatch\Tests;
 
 use Cblink\MeituanDispatch\MeituanDispatchException;
-use phpDocumentor\Reflection\Types\Array_;
 use PHPUnit\Framework\TestCase;
 use Cblink\MeituanDispatch\Dispatch;
 
@@ -32,7 +31,7 @@ class TestOrder extends TestCase
             'delivery_service_code' => 4011,
             'receiver_name' => 'test',
             'receiver_address' => '中国',
-            'receiver_phone' => '13900000000',
+            'receiver_phone' => '',
             'receiver_lng' => (int) (113.957613 * pow(10, 6)),
             'receiver_lat' => (int) (22.538135 * pow(10, 6)),
             'goods_value' => 100,
