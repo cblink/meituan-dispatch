@@ -1,7 +1,6 @@
 <?php
 namespace Cblink\MeituanDispatch\Tests;
 
-use Cblink\MeituanDispatch\MeituanDispatchException;
 use PHPUnit\Framework\TestCase;
 use Cblink\MeituanDispatch\Dispatch;
 
