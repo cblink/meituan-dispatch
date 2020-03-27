@@ -48,7 +48,6 @@ class TestOrder extends TestCase
      * 查询订单状态
      *
      * @return mixed
-     * @throws MeituanDispatchException
      */
     public function testQueryStatus()
     {
