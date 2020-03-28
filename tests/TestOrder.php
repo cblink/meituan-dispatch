@@ -6,9 +6,9 @@ use Cblink\MeituanDispatch\Dispatch;
 
 class TestOrder extends TestCase
 {
-    protected $secret = ';zU7^Tb]Ul#}_e.*uJ4o*^V6Dp]y<=)qT[:*:40M,Hw.CR!]s5iM.SyL_au]BOL8';
+    protected $secret = '';
 
-    protected $appKey = '78395bb1c91048d2b6f6a762352ab89a';
+    protected $appKey = '';
 
     /**
      * 创建订单
@@ -55,8 +55,8 @@ class TestOrder extends TestCase
             'secret' => $this->secret,
             'debug' => false
         ]))->queryStatus([
-            'mt_peisong_id' => '1585274485081001060',
-            'delivery_id' => '1'
+            'mt_peisong_id' => '',
+            'delivery_id' => ''
         ]);
 
         $this->assertArrayHasKey('data', $result);
