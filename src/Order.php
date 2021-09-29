@@ -91,4 +91,16 @@ class Order extends Api
         return $this->request('order/rider/location', $params);
     }
 
+    /**
+     * 获取骑手当前位置
+     *
+     * @param array $params
+     * @return mixed
+     * @throws MeituanDispatchException
+     */
+    public function preCreateByShop(array $params)
+    {
+        return $this->request('order/preCreateByShop', $params);
+    }
+
 }
